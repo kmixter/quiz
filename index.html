@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Quiz</title>
+    <title>Quiz App File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #336699;
+        }
+
+        .instructions {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
+    <h1>Quiz App</h1>
+
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>
+            To use the quiz app, you need a question and answer file in the following format:
+        </p>
+        <pre>
+Q: What is the capital of France?
+A: Paris
+Q: What is the formula for water?
+A: H2O
+        </pre>
+        <ol>
+            <li>Click the "Download Example File" button below to download a sample file.</li>
+            <li>Use a text editor (available on your Chromebook) to edit the file and add your questions.</li>
+            <li>Click the "Choose File" button below to upload your quiz file and start the quiz!</li>
+        </ol>
+        <a href="example_questions.txt" download="example_questions.txt">Download Example File</a>
+    </div>
+
     <input type="file" id="txtUpload" accept=".txt" />
+
     <script src="quiz.js"></script>
 </body>
-</html>
-
 </html>
